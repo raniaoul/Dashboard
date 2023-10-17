@@ -1,0 +1,70 @@
+@media only screen and (max-width: 1300px){
+    .nav-items.nav-item{
+        padding: 25px 40px;
+    }
+    span {
+        display: none;
+    }
+}.nav-items {
+  padding-top: 40px;
+  .nav-item {
+    padding: 25px 50px;
+    cursor: pointer;
+    @media only screen and (max-width: 1300px) {
+      padding: 25px 40px;
+    }
+    &:hover {
+      background-color: rgb(61, 0, 30);
+    }
+    &fa-icon {
+      margin-right: 20px;
+      font-size: 22px;
+    }
+    &span {
+      display: inline;
+      @media only screen and (max-width: 1300px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.nav-items {
+    padding-top: 40px;
+}
+.nav-item {
+    padding: 25px 50px;
+    cursor: pointer;
+    max-width: 1300px;
+}
+
+nav-item:hover {
+    background-color: rgb(0, 0, 0);
+}
+fa-icon {
+    margin-right: 20px;
+    font-size: 22px;
+
+}
+span {
+    display: inline;
+    max-width: 1300px;
+
+}
+a{
+  text-decoration: none;
+}
+a:visited {
+  color: #ffffff;
+}
+
+/* Hovered link (when the mouse pointer is over the link) */
+a:hover {
+  color: #ffffff;
+}
+
+/* Active link (when the link is clicked) */
+a:active {
+  color: #db803a;
+}
+

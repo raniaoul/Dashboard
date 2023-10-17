@@ -1,0 +1,27 @@
+@media only screen and (max-width: 1300px) {
+  .main-container.side-nav{
+    width: 100px;
+    min-width: 100px;
+}
+}
+.header{
+  position: fixed;
+  z-index: 1000;
+}
+
+.main-container {
+  display: flex;
+  padding-top: 70px;
+}
+  .side-nav {
+    width: 350px;
+    min-width: 230px;
+    min-height: calc(100vh - 70px);
+    background-color: #77003a;
+    color: #fff;
+    box-shadow: 5px 5px 5px #939393;
+  }
+
+    .main {
+    padding: 30px;
+  }

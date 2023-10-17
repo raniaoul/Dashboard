@@ -1,0 +1,25 @@
+<router-outlet></router-outlet>
+<div class="table-container">
+    <table>
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>prenom</th>
+            <th>nom</th>
+            <th>numero de telehone</th>
+            <th>email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of data">
+            <td>{{ item.idEmploye }}</td>
+            <td>{{ item.prenomEmploye}}</td>
+            <td>{{ item.nomEmploye}}</td>
+            <td>{{ item.numeroTelephone}}</td>
+            <td>{{ item.emailEmp}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+

@@ -1,0 +1,62 @@
+/* Container styles */
+.datacontainer {
+  height: 470px;
+  width: 100%;
+  overflow-x: auto;
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+}
+
+/* Dropdown styles */
+#selectOption {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+#selectOption option {
+  padding: 8px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-weight: bold;
+}
+
+th {
+  background-color: #77003a;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+td {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Hover effect */
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Spacing between cells */
+td:not(:last-child),
+th:not(:last-child) {
+  margin-right: 10px;
+}

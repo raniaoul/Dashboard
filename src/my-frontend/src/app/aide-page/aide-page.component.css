@@ -1,0 +1,82 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #77003a;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Team member cards */
+.team-member {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.team-member img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.team-member strong {
+  font-size: 1.2rem;
+}
+
+.team-member p {
+  color: #666;
+}
+
+/* Add a bit of spacing between team members */
+.team-member + .team-member {
+  margin-left: 1rem;
+}
+a{
+  text-decoration: none;
+}
+a:visited {
+  color: #ffffff;
+}
+
+/* Hovered link (when the mouse pointer is over the link) */
+a:hover {
+  color: #ffffff;
+}
+
+/* Active link (when the link is clicked) */
+a:active {
+  color: #db803a;
+}

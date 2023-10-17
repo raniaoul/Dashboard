@@ -1,0 +1,26 @@
+
+<label for="selectOption">Choisir une option: </label>
+<select id="selectOption" (change)="loadData()">
+  <option value="" disabled selected>Choisissez une option</option>
+  <option value="region">Région</option>
+  <option value="commune">Commune</option>
+  <option value="province">Province</option>
+</select>
+
+<div id="dataContainer" class="datacontainer">
+  <table *ngIf="data && data.length > 0">
+    <thead>
+    <tr>
+      <th>Code</th>
+      <th>Nombre de questionnaires réalisés</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of data">
+      <td>{{ item.codeId}}</td>
+      <td>{{ item.nbmQuest }}</td>
+    </tr>
+    </tbody>
+  </table>
+  <p *ngIf="data && data.length === 0">Aucune donnée disponible.</p>
+</div>

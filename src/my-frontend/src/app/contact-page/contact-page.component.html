@@ -1,0 +1,23 @@
+<div class="container">
+  <h2 class="title">Veuillez entrer les coordonnées demandées:</h2>
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+  <label>Prenom:</label>
+  <input type="text" formControlName="name" required>
+
+  <label>Nom</label>
+  <input type="text" formControlName="familyName" required>
+
+  <label>Identifiant:</label>
+  <input type="text" formControlName="id" required>
+
+  <label>Numero de Téléphone:</label>
+  <input type="text" formControlName="number" required>
+
+  <label>Email:</label>
+  <input type="email" formControlName="email" required>
+
+  <button type="submit">Ajouter</button>
+  <button type="button" (click)=" goToEmployeList()">Voir les coordonnées enregistrées</button>
+
+</form>
+</div>
